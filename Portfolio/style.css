@@ -48,7 +48,7 @@ body{
     color: rgb(4, 4, 217);
 }
 .fa-twitter{
-    color: rgb(33, 33, 206);
+    color: rgb(7, 7, 15);
 }
 .fa-instagram{
     color: rgb(229, 54, 115);
@@ -64,8 +64,53 @@ body{
     gap: 40px;
 }
 
-/* Education CSS */
+/* Projects CSS */
+.Projects{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+.eachProject img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 22px 1px #000000;
+}
+.eachProject{
+    width: 400px;
+    background-color: rgb(205, 203, 198);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    margin: 50px;
+    border-radius: 20px;
+    transition: 0.5s;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.eachProject h1{
+    font-size: 20px;
+    font-family: cursive;
+}
+.eachProject p{
+    font-size: 16px;
+}
+.projects-heading{
+    text-align: center;
+    font-size: 40px;
+    margin:  0 400px;
+    margin-top: 50px;
+    border-bottom: 5px solid rgb(6, 6, 12);
+    padding-bottom: 50px;
 
+}
+
+
+
+
+/* All animations */
 @keyframes slide-left {
     0% {
       -webkit-transform: translateX(0);
@@ -85,5 +130,18 @@ body{
     100% {
       -webkit-transform: translateX(100px);
               transform: translateX(100px);
+    }
+  }
+
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
     }
   }
