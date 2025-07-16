@@ -4,19 +4,21 @@
 }
 body{
     background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 .intro{
-    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 100px;
+    padding: 100px;
 }
 .intro-right img{
     width: 300px;
     height: 400px;
     border-radius: 50%;
     object-fit: cover;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .intro-left{
     width: 100%;
@@ -24,5 +26,29 @@ body{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-color: blue;
+    margin-left: 100px;
 }
+.intro-left h1{
+    font-size: 40px;
+}
+.intro-left h1 span{
+    color: rgb(4, 4, 217);
+}
+.intro-left p{
+    font-size: 18px;
+    width: 50%;
+}
+.intro-left p span{
+    color: rgb(215, 11, 11);
+}
+
+@keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }
