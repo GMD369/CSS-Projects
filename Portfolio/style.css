@@ -6,6 +6,8 @@ body{
     background-color: white;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Introduction CSS */
 .intro{
     display: flex;
     justify-content: space-between;
@@ -27,7 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-left: 100px;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .intro-left h1{
     font-size: 40px;
@@ -62,6 +64,8 @@ body{
     gap: 40px;
 }
 
+/* Education CSS */
+
 @keyframes slide-left {
     0% {
       -webkit-transform: translateX(0);
@@ -70,5 +74,16 @@ body{
     100% {
       -webkit-transform: translateX(-100px);
               transform: translateX(-100px);
+    }
+  }
+
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
     }
   }
