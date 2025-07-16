@@ -90,6 +90,17 @@ body{
     transition: 0.5s;
     animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+.eachProject:hover{
+    width: 350px;
+    box-shadow: 0px 0px 22px 1px #000000;
+    transition: 0.5s;
+    border-radius: 20px;
+    background-color: rgb(211, 211, 206);
+    transition: 0.5s;
+    cursor: pointer;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+}
 .eachProject h1{
     font-size: 20px;
     font-family: cursive;
@@ -107,6 +118,49 @@ body{
 
 }
 
+/* Skills CSS */
+.skills{
+ margin: 100px;
+ padding: 40px;
+ background-color:#EEEEEE ;
+ display: flex;
+ gap:20px;
+ flex-wrap: wrap;
+}
+.skills h1{
+    font-size: 20px;
+    font-family: cursive;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 22px 1px #000000;
+}
+.skills h1:hover{
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid #000000;
+    transition: 0.5s;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #d2cbcb;
+}
+.footer h1{
+    font-size: 20px;
+    font-family: cursive;
+}
+.footer p{
+    font-size: 16px;
+    font-family: cursive;
+}
+.social-icons{
 
 
 
