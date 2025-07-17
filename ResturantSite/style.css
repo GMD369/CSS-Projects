@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+header{
+    background-image: url("https://10websites-design-to-html-css.netlify.app/restaurant-design/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 0px 400px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.nav{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 20px;
+}
+.logo{
+    color: rgb(2, 91,150);
+}
+.nav2 a{
+    background-color: rgb(2, 91,150);
+    width: 100%;
+    padding:10px 20px;
+}
+.logo span,i{
+    font-size: 30px;
+}
+.active{
+    background-color: white !important;
+    color: rgb(2, 91,150) !important;
+}
+.highlight{
+    background-color: rgb(46, 144, 230) !important;
+}
