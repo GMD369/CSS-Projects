@@ -3,7 +3,6 @@
 body{
     font-family: "Roboto", sans-serif;
     margin: 0;
-    padding: 0 400px;
     background-color: white;
 }
 
@@ -12,7 +11,81 @@ header{
     background-size: cover;
     background-position: center;
     height: 95vh;
+    padding: 0 300px;
 }
 footer{
-    height: 5vh;
+    height: 15vh;
+    padding: 0 400px;
 }
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.nav .logo{
+    font-size:40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+button{
+    background-color: #00c2ff;
+    color: white;
+    border: none;
+    padding: 16px;
+}
+
+.content{
+    margin-top:200px;
+    color: white;
+}
+.content h1{
+    font-size: 60px;
+    color: #00c2ff;
+}
+.content p{
+    font-size: 20px;
+}
+.content button{
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+
+}
+.item h5{
+    color: #00c2ff;
+}
+.item p{
+    color: white;
+}
+
+@media all and (max-width: 500px) {
+    header {
+      padding: 10px;
+    }
+    .nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    .nav button {
+      display: none;
+    }
+    footer {
+      padding: 10px;
+      flex-direction: column;
+      height: fit-content;
+    }
+  }
