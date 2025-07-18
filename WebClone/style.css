@@ -122,7 +122,7 @@
   .feature-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
   }
   
   .feature-info h1 {
