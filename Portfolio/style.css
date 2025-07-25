@@ -21,7 +21,6 @@ body{
     border-radius: 100%;
     object-fit: cover;
     box-shadow: 0px 0px 22px 1px #000000;
-    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .intro-left{
     width: 100%;
@@ -29,7 +28,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .intro-left h1{
     font-size: 40px;
