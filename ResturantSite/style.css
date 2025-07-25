@@ -1,13 +1,21 @@
+html, body {
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
+  overflow-x: hidden;
 }
-header{
-    background-image: url("https://10websites-design-to-html-css.netlify.app/restaurant-design/bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    padding: 0px 400px;
+header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://10websites-design-to-html-css.netlify.app/restaurant-design/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 400px;
+  box-sizing: border-box;
 }
 a{
     color: white;
@@ -66,3 +74,64 @@ a{
     padding: 10px;
     font-size: 20px;
   }
+
+@media (max-width: 600px) {
+  header {
+    padding: 0 0px;
+    min-height: 100vh;
+    width: 100vw;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 16px;
+    gap: 10px;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .nav2 {
+    flex-direction: row !important;
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    align-items: center;
+    overflow-x: auto;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    scrollbar-width: thin;
+  }
+  .nav2 a {
+    padding: 10px 12px;
+    font-size: 16px;
+    width: auto;
+    text-align: center;
+    margin-bottom: 0;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+  }
+  .logo span, .logo i {
+    font-size: 22px;
+  }
+  .content {
+    margin-top: 60px;
+    gap: 15px;
+    padding: 0 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .content h3 {
+    font-size: 26px;
+    padding: 8px;
+  }
+  .white-link, .teal-link {
+    font-size: 16px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
